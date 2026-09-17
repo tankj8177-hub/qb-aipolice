@@ -1,0 +1,5 @@
+qb-aipolice v3.1.21
+- Traffic Stop now handles NPCs and real players who are inside vehicles.
+- Traffic Stop first brakes/immobilizes the target vehicle, then sends the AI unit to the stopped target.
+- Detain now also handles NPCs/players inside vehicles: vehicle is stopped and occupant is made to exit before handcuffing.
+- Existing eye-target selection, held-NPC behavior, multi-order behavior, transport, pursuit, and remount support preserved.

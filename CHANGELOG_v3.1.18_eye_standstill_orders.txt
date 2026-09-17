@@ -1,0 +1,8 @@
+v3.1.18 - FIX NPC eye tag + multiple orders
+
+- The NPC selected with ox_target is held with TaskStandStill instead of FreezeEntityPosition.
+- This keeps the NPC visually/statically in place while still allowing GTA AI Tasks to execute.
+- When an order is issued, the stand-still task is cleared so the police unit can interact normally.
+- Detain/wrist still freeze the NPC when those actions require it.
+- Follow/release/place vehicle/jail retain their existing movement behavior.
+- Existing eye selection and multiple-order flow preserved.

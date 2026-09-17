@@ -1,0 +1,7 @@
+qb-aipolice v3.1.23 - Jail Exit Teleport
+
+- Added configurable jail release point: vector4(1651.42, 2573.72, 44.56, 0.0).
+- When the native jail sentence ends, the player is faded out and teleported outside the police station.
+- Added configurable "Salida de prisión" blip at the release point.
+- The release teleport event is also sent after rcore_prison release so the configured exit point is consistent.
+- Existing jail, arrest, vehicle stop, pursuit and suspect menu systems remain unchanged.

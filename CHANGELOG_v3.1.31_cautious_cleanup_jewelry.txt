@@ -1,0 +1,9 @@
+v3.1.31 - DEPURACION CAUTELOSA
+
+1. Traslado NUI: al llegar a la carcel se limpia SOLO la unidad de transporte. La patrulla y el oficial ya no se quedan estacionados/esposados en la carcel.
+2. Jugador real: se procesa con el evento de carcel existente y NO se elimina al jugador. Se hace una segunda limpieza de patrulla/oficial por si la entidad sigue networked.
+3. NPC: se procesa y luego se elimina junto con oficial/patrulla.
+4. Robos QBOX: corregida la escucha de police:server:policeAlert para usar el tercer argumento playerSource, que qbx_jewelery pasa al disparar la alarma.
+5. Añadida escucha de qbx_storerobbery:server:callCops y qb-storerobbery:server:callCops como compatibilidad.
+6. Añadidos prints de depuracion de joyeria/alerta.
+7. NO se modificaron los detectores existentes de disparos, asesinatos ni reconocimiento de manos arriba.

@@ -1,0 +1,6 @@
+qb-aipolice v3.1.36 - Arrest Search / ox_inventory compatibility fix
+
+- Fixed server/integrations.lua error: "attempt to compare number with table".
+- arrestSearch now accepts ox_inventory Search() returning either a number or table.
+- Preserved existing illegal-item search behavior.
+- No changes to jewelry robbery detection, tactical response, surrender behavior, jail transport, or other AI police systems.

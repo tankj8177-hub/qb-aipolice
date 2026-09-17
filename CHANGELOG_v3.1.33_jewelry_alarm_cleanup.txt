@@ -1,0 +1,9 @@
+qb-aipolice v3.1.33
+
+- Joyería: la detección ahora lee la alerta real police:server:policeAlert que dispara qbx_jewelery al activar la alarma.
+- Se añadió respaldo por proximidad a Vangelico (-624.12,-228.25,37.06) cuando el locale de la alerta no contiene una palabra reconocible de robo.
+- qbx_jewelery:endcabinet sigue siendo solo diagnóstico; no genera una alerta duplicada.
+- Transporte a prisión: se conserva el traslado y procesamiento existente.
+- Después de procesar al detenido, la patrulla se mueve al punto vec3(1682.18,2607.53,44.56) y se elimina inmediatamente para evitar que quede chocando dentro del penal.
+- No se modificó la detección de asesinatos, disparos ni reconocimiento de manos arriba.
+- Los avisos de ox_inventory sobre goldchainitem/rolexitem/diamond_ringitem son independientes: indican que esos items de recompensa no existen en ox_inventory y no son la causa de la lógica de alerta policial.

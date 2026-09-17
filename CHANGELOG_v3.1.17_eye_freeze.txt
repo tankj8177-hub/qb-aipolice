@@ -1,0 +1,8 @@
+v3.1.17 - NPC reservado al usar ox_target
+
+- Al seleccionar un NPC con el ojo de ox_target, ese NPC queda quieto inmediatamente.
+- El NPC no vuelve a caminar por su cuenta al abrir/cerrar el NUI.
+- El objetivo seleccionado sigue siendo el mismo para multiples ordenes.
+- Las ordenes que deben liberar al NPC (seguir, liberar, desesposar, meter en vehiculo, etc.) pueden volver a moverlo.
+- Al detener/desesposar/seguir se respeta el flujo existente.
+- No se modifica la deteccion automatica de delitos.

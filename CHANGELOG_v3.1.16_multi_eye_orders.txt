@@ -1,0 +1,6 @@
+v3.1.16 - Multiple orders on the same ox_target-selected suspect
+
+- The exact NPC/player selected with the ox_target eye remains the active target.
+- Added an action token to NPC suspect units so an older, delayed order cannot overwrite a newer order.
+- Reused the same AI officer for consecutive NPC orders and reset its action state each time.
+- Existing arrest, jail, dispatch and automatic detection systems were left intact.

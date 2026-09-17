@@ -1,0 +1,31 @@
+AI POLICE v3.1.0 - FIXES
+
+- AI police units now transition from pursuit/approach into the real arrest pipeline.
+- Automatic arrests work without requiring the suspect to press surrender.
+- Fixed player-target menu actions being rejected after the AI unit reached the target.
+- Added temporary server authorization for a suspect selected by the police menu.
+- Fixed AI follow-up actions (cuff, uncuff, wrist, face, follow, release) for real players.
+- Fixed AI inspection/place-in-vehicle/jail follow-up validation.
+- Fixed NPC place-in-vehicle using the police unit's stored vehicle after the officer exits it.
+- NUI keeps game input available while open and no longer darkens/blocks the whole screen.
+- Police menu is now a compact right-side panel so the world/camera remains visible.
+- Removed an accidental duplicate helicopter vehicle creation line.
+
+
+v3.1.1 - TARGET JAIL FIX
+- Jail/unjail ya no sustituye el objetivo seleccionado por source.
+- Validación para policías en servicio al encarcelar a otro jugador.
+- NPC jail procesa al NPC local en vez de enviar al oficial a prisión.
+- Compatible con jefe/grade alto mientras el job esté en servicio.
+
+v3.1.4 - FIX JAIL EXPIRATION
+- Added server-side expiration watchdog for real players.
+- Jail records are cleared when the sentence expires.
+- rcore_prison ReleasePlayer is called automatically when available.
+- Native jail now has a client timer fallback that requests release at expiry.
+- Jail outfit is restored automatically on release.
+
+v3.1.5 - RESTORE AI CRIME DETECTION
+- Restored client/server crime-detection modules from the known-working AI arrest build.
+- Preserved F6 manual interaction changes and jail expiration fixes.
+- No changes to automatic AI crime dispatch/arrest logic beyond restoring detection modules.

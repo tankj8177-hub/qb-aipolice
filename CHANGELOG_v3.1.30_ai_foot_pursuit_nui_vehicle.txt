@@ -1,0 +1,8 @@
+v3.1.30 - IA persecucion a pie + NUI vehiculo preservado
+
+- Eliminado el uso de IsPedChasing(), native inexistente en FiveM, que provocaba el error de police.lua y mataba el watchdog de integridad.
+- La IA automatica ahora detecta si el sospechoso va a pie o en vehiculo y puede perseguirlo a pie cuando huye despues de bajarse de la patrulla.
+- La respuesta de robo tambien puede continuar la persecucion a pie si el objetivo corre.
+- Las ordenes NUI de NPC conservan la referencia de la patrulla aunque el agente ya se haya bajado. Esto permite DETENER -> BUSCAR/OTRAS ORDENES -> METER EN VEHICULO sin perder el vehiculo.
+- Se agrego debug adicional para mostrar la unidad y vehiculo reutilizados.
+- NO se cambio el traslado fisico a prision: permanece como en v3.1.29, incluyendo el proceso de llevar al detenido hasta Config.Arrest.fallbackJailCoords.

@@ -1,0 +1,6 @@
+# v3.1.25
+- The coordinates vector3(1651.42,2573.72,44.56) is now an EXIT/INTERACTION point only.
+- Added a blip at the prison exit.
+- Added an E interaction at the exit that teleports the player to the police station.
+- Default station destination: vector4(441.0,-981.2,30.69,90.0), configurable in Config.Arrest.jailExitStationCoords.
+- Does not change the jail entry/fallback jail coordinates.

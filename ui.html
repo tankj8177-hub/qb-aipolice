@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="ui.css" />
+</head>
+<body>
+    <div id="stars-container" class="hidden"><div id="stars"></div></div>
+
+    <div id="police-menu" class="hidden">
+        <div class="menu-card">
+            <div class="menu-head">
+                <div>
+                    <div class="eyebrow">AI POLICE DISPATCH</div>
+                    <h1>Centro de Despacho</h1>
+                    <p>Unidades NPC bajo tu mando</p>
+                </div>
+                <button id="close-menu" class="close">×</button>
+            </div>
+
+            <div class="target-panel">
+                <label>OBJETIVO</label>
+                <select id="target-select"><option value="">Mi ubicación / sin objetivo</option></select>
+                <div class="target-note">Selecciona un jugador o NPC cercano. Las órdenes de despacho y las acciones del sospechoso se aplican al objetivo seleccionado.</div>
+                <button id="open-suspect" class="suspect-open" type="button">ACCIONES DEL SOSPECHOSO</button>
+            </div>
+
+            <div class="units-row">
+                <label>UNIDADES <span id="units-value">1</span></label>
+                <input id="units" type="range" min="1" max="6" value="1" />
+            </div>
+
+            <div id="suspect-panel" class="suspect-panel hidden">
+                <div class="suspect-head">
+                    <div>
+                        <div class="section-title">CONTROL DEL SOSPECHOSO</div>
+                        <div class="suspect-subtitle">Ordena al agente AI que realice la acción sobre el objetivo seleccionado.</div>
+                    </div>
+                    <button id="close-suspect" class="mini-close" type="button">×</button>
+                </div>
+                <div id="suspect-actions" class="suspect-actions"></div>
+            </div>
+
+            <div class="section-title">DESPACHO Y OPERACIONES</div>
+            <div id="orders" class="orders"></div>
+
+            <div id="status" class="status">Listo para recibir órdenes.</div>
+            <div class="footer">F6 / ESC para cerrar</div>
+        </div>
+    </div>
+
+    <div id="jail-timer" class="hidden">
+        <div id="jail-reason"></div>
+        <div id="jail-time"></div>
+    </div>
+    <script src="ui.js"></script>
+</body>
+</html>

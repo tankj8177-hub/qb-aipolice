@@ -1,0 +1,9 @@
+v3.1.35 - Jewelry cabinet debug/fix
+
+- Fixed server-side crash: IsRealPolice was local in server/main.lua and was nil in server/detection.lua.
+- qbx_jewelery:server:endcabinet is now treated as the confirmed cabinet-break event.
+- Added all 20 cabinet coordinates supplied by the user for debug/nearest-cabinet reporting.
+- Added detailed server prints before/after AddHeat and before TriggerClientEvent.
+- Added client print when robberyDetected is received.
+- Existing shooting, murder and surrender behavior intentionally untouched.
+- No dependency on policeAlert is required for a jewelry cabinet break.

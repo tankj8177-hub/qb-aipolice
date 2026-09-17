@@ -1,0 +1,9 @@
+v3.1.11 - SUSPECT ACTIONS FIX
+Base: v3.1.5_ai_detection_restored.
+
+- F6 suspect buttons execute immediately after police/target validation.
+- Real-player actions no longer depend on the old second client->server action hop.
+- ID/search uses a dedicated client bridge.
+- NPC actions keep the existing AI officer flow.
+- AI crime detection, wanted system and jail timer are preserved from v3.1.5.
+- Explicit status messages are shown when an action is accepted or rejected.

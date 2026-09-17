@@ -1,0 +1,7 @@
+v3.1.19 - Reparacion de ordenes de movimiento/transporte
+- Mantiene el tag del ojo pero libera correctamente al NPC al ejecutar una orden.
+- Reforzado Meter en vehiculo.
+- Reforzado Liberar-Conducir y Liberar a pie.
+- Persecucion y Transporte cancelan el standstill del tag antes de iniciar la unidad.
+- Detener ya no congela al NPC antes de que pueda completar manos arriba.
+- No se cambia el selector del ojo ni la deteccion automatica.

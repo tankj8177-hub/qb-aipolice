@@ -1,0 +1,6 @@
+qb-aipolice v3.1.22
+
+- Fixed vehicle targeting through ox_target.
+- Aiming at a vehicle now shows "Abrir AI Police — conductor" when it has a valid NPC/player driver.
+- The selected target is the actual driver ped, so Traffic Stop, Detain, Search, Vehicle Search, Transport and other existing orders can operate on people inside cars.
+- Existing v3.1.21 behavior is preserved.

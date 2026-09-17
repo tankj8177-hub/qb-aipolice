@@ -1,0 +1,8 @@
+qb-aipolice v3.1.34
+
+- qbx_jewelery:server:endcabinet now directly reports the robbery to qb-aipolice.
+- This means breaking any jewelry cabinet that fires endcabinet activates the AI police robbery response even if police:server:policeAlert is not received by qb-aipolice.
+- Existing policeAlert listener remains for compatibility.
+- Jail transport: arrival detection expanded to 35m around Config.Arrest.fallbackJailCoords so the patrol cannot remain stuck trying to reach the exact processing coordinate.
+- After processing, the patrol is moved to vec3(1682.18, 2607.53, 44.56) and cleaned up.
+- Existing shooting, murder, surrender/hands-up, and transport-to-jail behavior otherwise left unchanged.

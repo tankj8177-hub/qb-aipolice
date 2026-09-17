@@ -1,0 +1,11 @@
+v3.1.28 - Robo -> respuesta IA táctica
+
+- Escucha robos de QBOX/QBX sin reemplazar sus eventos existentes.
+- qbx_jewelery: detecta el cierre exitoso de una vitrina y su alarma.
+- qbx_bankrobbery: detecta callCops.
+- police:server:policeAlert: detecta alertas comunes que contienen robo/banco/joyeria.
+- Al detectar robo, la IA crea unidades tácticas (Riot/Police3) con rifle/escopeta/taser.
+- Las unidades llegan al área, se bajan de la patrulla, buscan al sospechoso y arrestan si no dispara.
+- Si el sospechoso dispara o daña al agente, los agentes pasan a combate.
+- La respuesta de robo es independiente del sistema existente de estrellas, persecución y menú.
+- No se modifican los recursos de robo; solo se escuchan sus eventos.

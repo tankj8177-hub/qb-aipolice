@@ -1,0 +1,8 @@
+v3.1.32
+
+- Transporte NUI/jail: se conserva el traslado y procesamiento existente.
+- Después de procesar al detenido en prisión, la patrulla continúa hasta vec3(1682.18, 2607.53, 44.56) y allí se elimina. Esto evita que se quede chocando dentro del penal.
+- La detección de joyería ahora toma como fuente principal la alerta real que qbx_jewelery emite mediante police:server:policeAlert al activar la alarma.
+- qbx_jewelery:server:endcabinet ya no genera un segundo reporte independiente; solo registra debug y espera la alerta de la alarma, evitando duplicados/cooldown.
+- Se reconoce explícitamente el mensaje de Vangelico/jewelry aunque no contenga literalmente la palabra robbery.
+- No se modificó la lógica de surrender/manos arriba, disparos ni asesinatos.
